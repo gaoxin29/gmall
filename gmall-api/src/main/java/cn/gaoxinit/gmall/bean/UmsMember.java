@@ -3,14 +3,15 @@ package cn.gaoxinit.gmall.bean;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
+public class UmsMember implements Serializable{
 
-public class UmsMember {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    private String member_level_id;
+    private String memberLevelId;
     private String username;
     private String password;
     private String nickname;
@@ -37,12 +38,12 @@ public class UmsMember {
         this.id = id;
     }
 
-    public String getMember_level_id() {
-        return member_level_id;
+    public String getMemberLevelId() {
+        return memberLevelId;
     }
 
-    public void setMember_level_id(String member_level_id) {
-        this.member_level_id = member_level_id;
+    public void setMemberLevelId(String memberLevelId) {
+        this.memberLevelId = memberLevelId;
     }
 
     public String getUsername() {
@@ -180,4 +181,9 @@ public class UmsMember {
     public void setHistoryIntegration(int historyIntegration) {
         this.historyIntegration = historyIntegration;
     }
+
+
+
+
+
 }

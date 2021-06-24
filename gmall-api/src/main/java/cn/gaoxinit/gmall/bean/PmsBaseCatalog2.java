@@ -1,9 +1,8 @@
 package cn.gaoxinit.gmall.bean;
 
-//import com.atguigu.gmall.bean.BaseCatalog3;
-
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @param
@@ -20,15 +19,15 @@ public class PmsBaseCatalog2 implements Serializable {
     private String catalog1Id;
 
     @Transient
- //   private List<BaseCatalog3> catalog3List;
+    private List<PmsBaseCatalog3> catalog3List;
 
-  //  public List<BaseCatalog3> getCatalog3List() {
-     //   return catalog3List;
-   // }
+    public List<PmsBaseCatalog3> getCatalog3List() {
+        return catalog3List;
+    }
 
-   // public void setCatalog3List(List<BaseCatalog3> catalog3List) {
-    //    this.catalog3List = catalog3List;
-    //}
+    public void setCatalog3List(List<PmsBaseCatalog3> catalog3List) {
+        this.catalog3List = catalog3List;
+    }
 
     public String getId() {
         return id;
