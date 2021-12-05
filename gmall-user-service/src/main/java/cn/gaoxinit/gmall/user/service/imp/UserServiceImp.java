@@ -41,4 +41,8 @@ public class UserServiceImp implements UserService {
         List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.selectByExample(e);
         return umsMemberReceiveAddresses;
     }
+
+    public static void main(String[] args) {
+        System.out.println("测试测试测试测试测试测试测试测试");
+    }
 }
