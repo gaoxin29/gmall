@@ -43,6 +43,6 @@ public class UserServiceImp implements UserService {
     }
 
     public static void main(String[] args) {
-        System.out.println("测试测试测试测试测试测试测试测试");
+        System.out.println("测试测试测试测试测试测试测试测试 换账号测试");
     }
 }
